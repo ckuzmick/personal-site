@@ -1,9 +1,9 @@
 import React, { useEffect } from "react";
 import "@fontsource/atkinson-hyperlegible"
-import { Override, Data, motionValue, useTransform } from "framer"
 import ReactDOM from "react-dom";
 import { useInView } from "react-intersection-observer";
 import { motion, useAnimation } from "framer-motion";
+import NavBar from "../components/layout/NavBar.js"
 
  
 // styles
@@ -144,11 +144,13 @@ const IndexPage = () => {
       <head>
       <title>Home Page</title>
       </head>
+      <NavBar></NavBar>
       <h1><center>hello</center></h1>
 
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Integer vitae justo eget magna fermentum. Tortor id aliquet lectus proin nibh. Sed id semper risus in. Tincidunt lobortis feugiat vivamus at. Turpis egestas maecenas pharetra convallis posuere. Urna porttitor rhoncus dolor purus non enim praesent. Vitae congue mauris rhoncus aenean vel elit scelerisque mauris pellentesque. Erat velit scelerisque in dictum non consectetur a erat nam. Nisi quis eleifend quam adipiscing vitae proin sagittis nisl. Non quam lacus suspendisse faucibus interdum posuere lorem ipsum. Vel eros donec ac odio tempor orci dapibus ultrices in.
-
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Integer vitae justo eget magna fermentum. Tortor id aliquet lectus proin nibh. Sed id semper risus in. Tincidunt lobortis feugiat vivamus at. Turpis egestas maecenas pharetra convallis posuere. Urna porttitor rhoncus dolor purus non enim praesent. Vitae congue mauris rhoncus aenean vel elit scelerisque mauris pellentesque. Erat velit scelerisque in dictum non consectetur a erat nam. Nisi quis eleifend quam adipiscing vitae proin sagittis nisl. Non quam lacus suspendisse faucibus interdum posuere lorem ipsum. Vel eros donec ac odio tempor orci dapibus ultrices in.
+</p>
+<p>
 Volutpat maecenas volutpat blandit aliquam. Sit amet volutpat consequat mauris nunc congue nisi vitae suscipit. Bibendum at varius vel pharetra vel turpis nunc eget lorem. Turpis egestas sed tempus urna et pharetra pharetra. Sit amet dictum sit amet justo donec enim. Lectus urna duis convallis convallis tellus id interdum velit. Morbi leo urna molestie at elementum eu. Bibendum at varius vel pharetra vel turpis nunc. Amet porttitor eget dolor morbi. Turpis massa sed elementum tempus egestas sed. Orci a scelerisque purus semper eget. Turpis cursus in hac habitasse platea dictumst quisque. Sed turpis tincidunt id aliquet risus. Imperdiet massa tincidunt nunc pulvinar sapien et. Diam donec adipiscing tristique risus nec feugiat in fermentum. Praesent elementum facilisis leo vel fringilla est ullamcorper. Dis parturient montes nascetur ridiculus mus mauris vitae ultricies leo. Consectetur a erat nam at lectus urna duis convallis convallis. Tempor orci eu lobortis elementum nibh. In fermentum et sollicitudin ac.
 
 Semper auctor neque vitae tempus quam. Tincidunt vitae semper quis lectus nulla at volutpat. Ultrices gravida dictum fusce ut placerat orci nulla. Mi proin sed libero enim sed faucibus turpis in. Pellentesque habitant morbi tristique senectus. Varius morbi enim nunc faucibus a pellentesque sit amet porttitor. Mattis ullamcorper velit sed ullamcorper morbi tincidunt ornare. Feugiat vivamus at augue eget arcu dictum. Aliquet bibendum enim facilisis gravida neque convallis a. Lacus sed turpis tincidunt id aliquet risus feugiat in ante. Nam libero justo laoreet sit amet cursus sit amet dictum. Praesent elementum facilisis leo vel fringilla est ullamcorper.
