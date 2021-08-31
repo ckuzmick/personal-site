@@ -15,7 +15,7 @@ const NavBar = () => (
         }}
     >
         <li style={{display: "inline", padding: "1em", fontFamily: "Atkinson Hyperlegible", fontSize: "25px", textDecoration: "none"}}><a href="https://github.com/ckuzmick">GitHub</a></li>
-        <li style={{display: "inline", padding: "1em", fontFamily: "Atkinson Hyperlegible", fontSize: "25px", textDecoration: "none"}}><a href="about">About</a></li>
+        <li style={{display: "inline", padding: "1em", fontFamily: "Atkinson Hyperlegible", fontSize: "25px", textDecoration: "none"}}></li>
         <li style={{display: "inline", padding: "1em", fontFamily: "Atkinson Hyperlegible", fontSize: "25px", textDecoration: "none"}}/>
         <li style={{display: "inline", padding: "1em", fontFamily: "Atkinson Hyperlegible", fontSize: "25px", textDecoration: "none"}}/>
     </ul>
