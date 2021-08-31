@@ -15,8 +15,12 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
+    "@fontsource/atkinson-hyperlegible": "^4.5.1",
+    "framer-motion": "^4.1.17",
     "gatsby": "^3.12.1",
+    "gatsby-plugin-scroll-reveal": "^0.0.7",
     "gatsby-plugin-theme-ui": "^0.11.1",
+    "gsap": "^3.7.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "theme-ui": "^0.11.1"
