@@ -6,6 +6,7 @@ import { motion, useAnimation } from "framer-motion";
 import NavBar from "../components/layout/NavBar.js"
 import "../components/layout.css"
 import { lineHeight, textAlign } from "styled-system";
+import "@fontsource/source-code-pro";
 
  
 // styles
@@ -149,15 +150,41 @@ const ThingsPage = () => {
       <NavBar></NavBar>
 
         <div class="container">
+            
             <div class="item">
-                <h1 style={{
+              <div class="nestcontainer">
+                <div class="nestitem">
+                  <h1 style={{
                     margin: "30px",
                     lineHeight: "1.5em",
-                    textAlign: "center"
-                }}>Obsidian</h1>
+                    textAlign: "left",
+                    fontWeight: "bolder",
+                    fontFamily: "Source Code Pro"
+                  }}>Obsidian</h1>
+                  
+                  <img src="/Obsidian.png" style={{
+                  width: "200px",
+                  marginLeft: "10px",
+                  marginTop: "-10px"
+                }}></img>
 
-            </div>
+              </div>  
+                <div class="nestitem" style={{
+                  marginTop: "30px"
+                }}>
+                  <p>
+                    The human brain is non-linear: we jump from idea to idea, all the time. Your second brain should work the same.
+                  </p>
+                  <p>
+                    In Obsidian, making and following connections is frictionless. Tend to your notes like a gardener; at the end of the day, sit back and marvel at your own knowledge graph.
+                  </p>
+                </div>
+              </div>
+
+        </div>
+
             <div class="divider"></div>
+
             <div class="item">
                 thing
             </div>
