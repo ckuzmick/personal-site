@@ -9,7 +9,7 @@ import NavBar from "../components/layout/NavBar.js"
 // styles
 const pageStyles = {
   color: "#232129",
-  padding: 96,
+  padding: "15%",
   fontFamily: "Atkinson Hyperlegible",
 }
 const headingStyles = {
@@ -21,7 +21,7 @@ const headingAccentStyles = {
   color: "#663399",
 }
 const paragraphStyles = {
-  marginBottom: 48,
+  marginBottom: 30,
 }
 const codeStyles = {
   color: "#8A6534",
@@ -51,7 +51,7 @@ const linkStyle = {
 const docLinkStyle = {
   ...linkStyle,
   listStyleType: "none",
-  marginBottom: 24,
+  marginBottom: 70,
 }
 
 const descriptionStyle = {
