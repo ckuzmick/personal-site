@@ -1,13 +1,17 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState, isOpen, setOpen } from "react";
 import "@fontsource/atkinson-hyperlegible"
 import ReactDOM from "react-dom";
 import { useInView } from "react-intersection-observer";
 import { motion, useAnimation } from "framer-motion";
 import NavBar from "../components/layout/NavBar.js"
-import "../components/layout.css"
 import { lineHeight, textAlign } from "styled-system";
 import "@fontsource/source-code-pro";
-
+import "@fontsource/crimson-text";
+import TestArticle from "../components/TestArticle.js"
+import "../components/masonry.css"
+import Masonry from 'react-masonry-css'
+import { Turn as Hamburger } from 'hamburger-react'
+import Menu from "../components/layout/Menu.js";
  
 // styles
 const pageStyles = {
@@ -139,67 +143,49 @@ function SlideIn({ children }) {
   );
 }
 
+const breakpointColumnsObj = {
+  default: 4,
+  1100: 3,
+  700: 2,
+  500: 1
+};
 
-// markup
+//markup
 const ThingsPage = () => {
   return (
     <main style={pageStyles}>
       <head>
       <title>Home Page</title>
       </head>
-      <NavBar></NavBar>
+      <Menu/>
+        <Masonry
+          breakpointCols={breakpointColumnsObj}
+          className="my-masonry-grid"
+          columnClassName="my-masonry-grid_column">
+          <div class="item">
+            <a class="title" href="/things/obsidian/">Obsidian For Notes</a>
 
-        <div class="container">
-            
-            <div class="item">
-              <div class="nestcontainer">
-                <div class="nestitem">
-                  <h1 style={{
-                    margin: "30px",
-                    lineHeight: "1.5em",
-                    textAlign: "left",
-                    fontWeight: "bolder",
-                    fontFamily: "Source Code Pro"
-                  }}>Obsidian</h1>
-                  
-                  <img src="/Obsidian.png" style={{
-                  width: "200px",
-                  marginLeft: "10px",
-                  marginTop: "-10px"
-                }}></img>
+            <br/>
 
-              </div>  
-                <div class="nestitem" style={{
-                  marginTop: "30px"
-                }}>
-                  <p>
-                    The human brain is non-linear: we jump from idea to idea, all the time. Your second brain should work the same.
-                  </p>
-                  <p>
-                    In Obsidian, making and following connections is frictionless. Tend to your notes like a gardener; at the end of the day, sit back and marvel at your own knowledge graph.
-                  </p>
-                </div>
-              </div>
+            <p class="desc">
+              Obsidian is a locally-based, plain text mardown editing service used by at least 3 people worldwide. Out of the 1 markdown editor I've used regularly, this one is definently the best. Joking aside however, Obsidian is one of the best free markdown editors I've seen.
+            </p>
+          </div>
+          <div class="item">
+            <a class="title" href="/things/obsidian/">Coding For The Web</a>
 
-        </div>
+            <br/>
 
-            <div class="divider"></div>
-
-            <div class="item">
-                thing
-            </div>
-            <div class="item"></div>
-            <div class="item"></div>
-            <div class="item"></div>
-            <div class="item"></div>
-            <div class="item"></div>
-            <div class="item"></div>
-            <div class="item"></div>
-            <div class="item"></div>
-            <div class="item"></div>
-            <div class="item"></div>
-        </div>
-
+            <p class="desc">
+              Mostly in Gatsby, like what I built this site in, but I've done some things in plain html, like my first ever site(it's not very good, you can find it <a href="https://ckuzmick.github.io/cgkdesign/">here</a>) Just looked back on it, it's really bad
+            </p>
+          </div>
+          <TestArticle/>
+          <TestArticle/>
+          <TestArticle/>
+          <TestArticle/>
+          <TestArticle/>          
+        </Masonry>        
     </main>
   )
 }

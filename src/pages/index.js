@@ -4,6 +4,7 @@ import ReactDOM from "react-dom";
 import { useInView } from "react-intersection-observer";
 import { motion, useAnimation } from "framer-motion";
 import NavBar from "../components/layout/NavBar.js"
+import Menu from "../components/layout/Menu.js";
 
  
 // styles
@@ -144,7 +145,7 @@ const IndexPage = () => {
       <head>
       <title>Home Page</title>
       </head>
-      <NavBar></NavBar>
+      <Menu/>
       <h1><center>hello</center></h1>
 
 <p>

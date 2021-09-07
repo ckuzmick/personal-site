@@ -1,0 +1,43 @@
+.grid {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(250px,1fr));
+ }
+
+ .item {
+    background: grey;
+    padding: 30px;
+ }
+
+ .title {
+    line-height: 30px;
+    text-align: left;
+    font-weight: bolder;
+    font-family: "Crimson Text";
+    text-decoration: none;
+    font-size: 2em;
+    color: black;
+ }
+
+ .desc {
+    margin-top: 10px;
+    margin-bottom: -2px;
+ }
+
+ .my-masonry-grid {
+   display: -webkit-box; /* Not needed if autoprefixing */
+   display: -ms-flexbox; /* Not needed if autoprefixing */
+   display: flex;
+   margin-left: -20px; /* gutter size offset */
+   width: auto;
+ }
+ .my-masonry-grid_column {
+   padding-left: 20px; /* gutter size */
+   background-clip: padding-box;
+ }
+ 
+ /* Style your items */
+ .my-masonry-grid_column > div { /* change div to reference your elements you put in <Masonry> */
+   background: grey;
+   margin-bottom: 20px;
+ }

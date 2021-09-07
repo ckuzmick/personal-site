@@ -3,12 +3,14 @@ import "@fontsource/atkinson-hyperlegible"
 import ReactDOM from "react-dom";
 import { useInView } from "react-intersection-observer";
 import { motion, useAnimation } from "framer-motion";
-import NavBar from "../components/layout/NavBar.js"
-import "@fontsource/montserrat/900.css"
-import Menu from "../components/layout/Menu.js";
+import NavBar from "../../components/layout/NavBar"
+import "../../components/thingspages.css"
+import "@fontsource/source-code-pro";
+import "@fontsource/crimson-text";
+import "@fontsource/zilla-slab"
+import "@fontsource/share-tech-mono"
 
-//styles
-
+// styles
 const pageStyles = {
     color: "#232129",
     padding: "15%",
@@ -101,10 +103,10 @@ const pageStyles = {
         ref={ref}
         animate={controls}
         initial="hidden"
-        transition={{ duration: 2 }}
+        transition={{ duration: 1 }}
         variants={{
-          visible: { opacity: 1, scale: 1, position: 100 },
-          hidden: { opacity: 0, scale: 1, position: 0 }
+          visible: { opacity: 1, scale: 1 },
+          hidden: { opacity: 0, scale: 1 }
         }}
       >
         {children}
@@ -112,109 +114,33 @@ const pageStyles = {
     );
   }
 
-//markup
-const AboutPage = () => (
-  <main style={pageStyles}>
-    <center>
-    <Menu/>
-    
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    
-    <h3>About the Author</h3>
-
-    <img src="/arrow.gif" style={{
-        width: "50px"
-    }}></img>
-
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>   
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>   
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/> 
-
-    </center>
-
-    <h1 style={{
-        fontFamily:"Montserrat",
-        fontSize:"5em"
-    }}>Conrad is a</h1>
-    <FadeVis>
-        <h1 
-            style={{
-                fontFamily:"Montserrat",
-                fontSize:"5em",
-                color:"#8334eb",
-                lineHeight:"40%"
-        }}>person.</h1>
-    </FadeVis>
-
-    <br/>
-
-    <h1 style={{
-        fontFamily:"Montserrat",
-        fontSize:"5em"
-    }}>Conrad is a</h1>
-    <FadeVis>
-        <h1 
-            style={{
-                fontFamily:"Montserrat",
-                fontSize:"5em",
-                color:"#8334eb",
-                lineHeight:"40%"
-        }}>computerer.</h1>
-    </FadeVis>
-
-    <br/>
-
-    <h1 style={{
-        fontFamily:"Montserrat",
-        fontSize:"5em"
-    }}>Conrad is a</h1>
-    <FadeVis>
-        <h1 
+// markup
+const ObsidanPage = () => {
+    return (
+      <main style={pageStyles}>
+        <head>
+        <title>Obsidian</title>
+        </head>
+        <NavBar></NavBar>
+        <h1 class="page-title">Obsidian</h1>
+        <p class="page-text">
+            Obsidian is a relatively new entrant in the increasingly crowded Markdown knowledge base and note-taking market. Obsidian’s excellent Markdown support and its simple, straightforward design makes it a standout application in the category. Desktop and mobile applications are available.
+        </p>
+        <p style={{
+            marginTop: "-20px",
+            fontWeight: "600"
+        }} >text from <a href="https://www.markdownguide.org/tools/obsidian/">mardownguide.org</a></p>
         
-            style={{
-                fontFamily:"Montserrat",
-                fontSize:"5em",
-                color:"#8334eb",
-                lineHeight:"40%"
-        }}>politician.</h1>
-    </FadeVis>
-
-
-    
-      
-    
-  </main>
-)
-
-export default AboutPage
+        <div class="codeblock">
+            .<br/>
+            |- Daily Notes<br/>
+            |&nbsp;&nbsp;|- Different Months<br/>
+            |- Work Things<br/>
+            |- Personal Things<br/>
+        </div>
+  
+      </main>
+    )
+  }
+  
+  export default ObsidanPage

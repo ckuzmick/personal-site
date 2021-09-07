@@ -1,0 +1,20 @@
+.page-title {
+    font-family: "Crimson Text";
+    font-size: 50px;
+    line-height: 0em;
+    font-weight: 900;
+}
+
+.page-text {
+    font-size: 30px;
+    font-family: "Zilla Slab";
+    font-weight: 500;
+}
+
+.codeblock {
+    background-color: rgb(231, 231, 231);
+    font-family: "Share Tech Mono";
+    padding: 5px;
+    border-radius: 5px;
+}
+
