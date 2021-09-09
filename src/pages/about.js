@@ -115,8 +115,8 @@ const pageStyles = {
 //markup
 const AboutPage = () => (
   <main style={pageStyles}>
-    <center>
     <Menu/>
+    <center>
     
     <br/>
     <br/>

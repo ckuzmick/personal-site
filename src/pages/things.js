@@ -132,10 +132,10 @@ function SlideIn({ children }) {
       ref={ref}
       animate={controls}
       initial="hidden"
-      transition={{ duration: 1 }}
+      transition={{ duration: 1, type: "spring" }}
       variants={{
-        visible: { position: 200 },
-        hidden: { position: -200  }
+        visible: { y: 0, opacity: 1 },
+        hidden: { y: 200, opacity: 0 }
       }}
     >
       {children}
@@ -158,20 +158,30 @@ const ThingsPage = () => {
       <title>Home Page</title>
       </head>
       <Menu/>
+      <br/>
         <Masonry
           breakpointCols={breakpointColumnsObj}
           className="my-masonry-grid"
           columnClassName="my-masonry-grid_column">
-          <div class="item">
-            <a class="title" href="/things/obsidian/">Obsidian For Notes</a>
+          <SlideIn><div class="item">
+            <a class="title" href="/things/obsidian/">Minecraft</a>
 
             <br/>
 
             <p class="desc">
-              Obsidian is a locally-based, plain text mardown editing service used by at least 3 people worldwide. Out of the 1 markdown editor I've used regularly, this one is definently the best. Joking aside however, Obsidian is one of the best free markdown editors I've seen.
+              I've been playing Minecraft on-off for over 6 years at this point, but it was in July 2020 when I got Java Edition for the first time is when i started playing again. 
             </p>
-          </div>
-          <div class="item">
+          </div></SlideIn>
+          <SlideIn><div class="item">
+            <a class="title" href="/things/">"Politics"</a>
+
+            <br/>
+
+            <p class="desc">
+              In June 2021, Conrad ran for Treasurer of his student council under the slogan "make the budget thick agian" He became one of the most powerful politicians in the entire world after that. 
+            </p>
+          </div></SlideIn>
+          <SlideIn><div class="item">
             <a class="title" href="/things/obsidian/">Coding For The Web</a>
 
             <br/>
@@ -179,12 +189,25 @@ const ThingsPage = () => {
             <p class="desc">
               Mostly in Gatsby, like what I built this site in, but I've done some things in plain html, like my first ever site(it's not very good, you can find it <a href="https://ckuzmick.github.io/cgkdesign/">here</a>) Just looked back on it, it's really bad
             </p>
-          </div>
-          <TestArticle/>
-          <TestArticle/>
-          <TestArticle/>
-          <TestArticle/>
-          <TestArticle/>          
+          </div></SlideIn>
+          <SlideIn><div class="item">
+            <a class="title" href="/things/obsidian/">Obsidian For Notes</a>
+
+            <br/>
+
+            <p class="desc">
+              Obsidian is a locally-based, plain text mardown editing service used by at least 3 people worldwide. Out of the 1 markdown editor I've used regularly, this one is definently the best. Joking aside however, Obsidian is one of the best free markdown editors I've seen.
+            </p>
+          </div></SlideIn>
+          <SlideIn><div class="item">
+            <a class="title" href="/things/obsidian/">Video Editing</a>
+
+            <br/>
+
+            <p class="desc">
+              I started doing various things with video editing in October 2020, but before that
+            </p>
+          </div></SlideIn>       
         </Masonry>        
     </main>
   )
