@@ -2,6 +2,7 @@ import React from "react"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 import "@fontsource/atkinson-hyperlegible"
 import { motion, useAnimation } from "framer-motion";
+import "../layout.css"
 
 const NavBar = () => (
   <div>

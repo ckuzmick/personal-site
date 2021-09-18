@@ -100,10 +100,10 @@ function FadeVis({ children }) {
       ref={ref}
       animate={controls}
       initial="hidden"
-      transition={{ duration: 1 }}
+      transition={{ duration: 3 }}
       variants={{
         visible: { opacity: 1, scale: 1 },
-        hidden: { opacity: 0, scale: 1 }
+        hidden: { opacity: 0, scale: 0 }
       }}
     >
       {children}
@@ -129,7 +129,7 @@ function SlideIn({ children }) {
       transition={{ duration: 2 }}
       variants={{
         visible: { x: 0, opacity: 1 },
-        hidden: { x: -400, opacity: -1 }
+        hidden: { x: -400, opacity: 1 }
       }}
     >
       {children}
@@ -148,32 +148,15 @@ const IndexPage = () => {
       <Menu/>
       <h1><center>hello, welcome to Conrad's site, you're probably here because of a reason, so click on the thing in the top right.</center></h1>
 
-<p>
-  Conrad is one of the most epic people in the entire world
-</p>
+      <p><center>
+         Currently I'm not that famous, so this will mainly function as an area for all the code I've done
+      </center></p>
 
 <FadeVis>
 
 <p><center>testing</center></p>
 
 </FadeVis>
-
-<SlideIn>
-
-<ul>
-  <li>list item</li>
-  <li>list item</li>
-  <li>list item</li>
-  <li>list item</li>
-  <li>list item</li>
-  <li>list item</li>
-  <li>list item</li>
-  <li>list item</li>
-  <li>list item</li>
-</ul>
-
-</SlideIn>
-
     </main>
   )
 }

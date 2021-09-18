@@ -1,5 +1,5 @@
  .item {
-    background: grey;
+    background: rgb(175, 175, 175);
     padding: 30px;
  }
 
@@ -24,15 +24,6 @@
    display: flex;
    margin-left: -20px; /* gutter size offset */
    width: auto;
-   -webkit-column-rule-width: 1px;
-   -moz-column-rule-width: 1px;
-        column-rule-width: 1px;
--webkit-column-rule-style: solid;
-   -moz-column-rule-style: solid;
-        column-rule-style: solid;
--webkit-column-rule-color: black;
-   -moz-column-rule-color: black;
-        column-rule-color: black;
  }
  .my-masonry-grid_column {
    padding-left: 20px; /* gutter size */

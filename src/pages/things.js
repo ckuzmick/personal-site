@@ -160,9 +160,9 @@ const ThingsPage = () => {
       <Menu/>
       <br/>
         <Masonry
-          breakpointCols={breakpointColumnsObj}
-          className="my-masonry-grid"
-          columnClassName="my-masonry-grid_column">
+            breakpointCols={breakpointColumnsObj}
+            className="my-masonry-grid"
+            columnClassName="my-masonry-grid_column">
           <SlideIn><div class="item">
             <a class="title" href="/things/obsidian/">Minecraft</a>
 
@@ -191,15 +191,6 @@ const ThingsPage = () => {
             </p>
           </div></SlideIn>
           <SlideIn><div class="item">
-            <a class="title" href="/things/obsidian/">Obsidian For Notes</a>
-
-            <br/>
-
-            <p class="desc">
-              Obsidian is a locally-based, plain text mardown editing service used by at least 3 people worldwide. Out of the 1 markdown editor I've used regularly, this one is definently the best. Joking aside however, Obsidian is one of the best free markdown editors I've seen.
-            </p>
-          </div></SlideIn>
-          <SlideIn><div class="item">
             <a class="title" href="/things/obsidian/">Video Editing</a>
 
             <br/>
@@ -207,7 +198,16 @@ const ThingsPage = () => {
             <p class="desc">
               I started doing various things with video editing in October 2020, but before that
             </p>
-          </div></SlideIn>       
+          </div></SlideIn>    
+          <SlideIn><div class="item">
+            <a class="title" href="/things/obsidian/">Obsidian For Notes</a>
+
+            <br/>
+
+            <p class="desc">
+              Obsidian is a locally-based, plain text mardown editing service used by at least 3 people worldwide. Out of the 1 markdown editor I've used regularly, this one is definently the best. Joking aside however, Obsidian is one of the best free markdown editors I've seen.
+            </p>
+          </div></SlideIn>   
         </Masonry>        
     </main>
   )

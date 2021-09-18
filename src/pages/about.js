@@ -117,61 +117,31 @@ const AboutPage = () => (
   <main style={pageStyles}>
     <Menu/>
     <center>
-    
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    
-    <h3>About the Author</h3>
 
-    <img src="/arrow.gif" style={{
-        width: "50px"
-    }}></img>
+    <div style={{
+      marginBottom: "min(max(1000px), 100vh)"
+    }}>
+      <h3 style={{
+        fontSize:"25px",
+        marginBottom:"0px"
+      }}>About the Author</h3>
 
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>   
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>   
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/> 
-
+      <img src="/arrow.gif" style={{
+       width: "50px"
+      }}></img>
+    </div>
+   
     </center>
 
     <h1 style={{
         fontFamily:"Montserrat",
-        fontSize:"5em"
+        fontSize:"min(max(5em), 10vw)"
     }}>Conrad is a</h1>
     <FadeVis>
         <h1 
             style={{
                 fontFamily:"Montserrat",
-                fontSize:"5em",
+                fontSize:"min(max(5em), 10vw)",
                 color:"#8334eb",
                 lineHeight:"40%"
         }}>person.</h1>
@@ -181,13 +151,13 @@ const AboutPage = () => (
 
     <h1 style={{
         fontFamily:"Montserrat",
-        fontSize:"5em"
+        fontSize:"min(max(5em), 10vw)"
     }}>Conrad is a</h1>
     <FadeVis>
         <h1 
             style={{
                 fontFamily:"Montserrat",
-                fontSize:"5em",
+                fontSize:"min(max(5em), 10vw)",
                 color:"#8334eb",
                 lineHeight:"40%"
         }}>computerer.</h1>
@@ -197,14 +167,14 @@ const AboutPage = () => (
 
     <h1 style={{
         fontFamily:"Montserrat",
-        fontSize:"5em"
+        fontSize:"min(max(5em), 10vw)"
     }}>Conrad is a</h1>
     <FadeVis>
         <h1 
         
             style={{
                 fontFamily:"Montserrat",
-                fontSize:"5em",
+                fontSize:"min(max(5em), 10vw)",
                 color:"#8334eb",
                 lineHeight:"40%"
         }}>politician.</h1>

@@ -9,7 +9,7 @@ const easeSlow = css`
 const menuBtn = css`
   position: absolute;
   z-index: 3;
-  right: 35px;
+  right: 38px;
   top: 38px;
   cursor: pointer;
   ${easeSlow};
@@ -20,22 +20,22 @@ const menuBtn = css`
 
 const btnLine = css`
   width: 28px;
-  height: 4px;
-  margin: 0 0 5px 0;
+  height: 2px;
+  margin: 0 0 7.33px 0;
   background-color: #141414;
   ${easeSlow};
   &.closer {
     background-color: #141414;  
     &:nth-child(1) {
-      transform: rotate(45deg) translate(4px, 0px);
-      width: 20px;
+      transform: rotate(45deg) translate(12.33px, 0px);
+      width: 28px;
     }
     &:nth-child(2) {
-      transform: translateX(-8px);
+      transform: rotate(-45deg) translateX(-100px);
     }
     &:nth-child(3) {
-      transform: rotate(-45deg) translate(4px, 0px);
-      width: 20px;
+      transform: rotate(-45deg) translate(12.33px, 0px);
+      width: 28px;
     }
   }
 `;
@@ -49,7 +49,7 @@ const menuOverlay = css`
   height: 100vh;
   width: 40vw;
   transform: translateX(100%);
-  transition: all 500ms ease-in-out;
+  transition: all 350ms ease-in-out;
   &.show {
     background-color: #d4d4d4;
     transform: translateX(0%); 
